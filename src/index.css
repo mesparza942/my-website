@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -14,4 +14,13 @@ body {
   margin: 0;
   min-width: 100%;
   min-height: 100vh;
+}
+
+a:hover {
+  color: #00b000;
+  text-decoration: underline;
+}
+
+a.btn-type:hover {
+  text-decoration: none;
 }

@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { Switch } from "@headlessui/react";
-import { SunIcon } from "@heroicons/react/24/solid";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { useLocalStorage } from "usehooks-ts";
 
 function classNames(...classes: string[]) {
@@ -25,45 +26,50 @@ const ThemeToggle = () => {
   };
 
   return (
-    <Switch
-      checked={enabled}
-      onChange={handleThemeChange}
-      title="Toggle theme"
-      className={classNames(
-        enabled ? "bg-gray-400" : "bg-green-800",
-        "relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out"
-      )}
-    >
-      <span
+    <>
+      <label htmlFor="themeToggle" className="hidden">
+        Theme toggle Dark Mode/Light Mode
+      </label>
+      <Switch
+        id="themeToggle"
+        checked={enabled}
+        onChange={handleThemeChange}
+        title="Toggle theme"
         className={classNames(
-          enabled ? "translate-x-5" : "translate-x-0",
-          "pointer-events-none relative inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"
+          "relative bg-greenFav inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out"
         )}
       >
         <span
           className={classNames(
-            enabled
-              ? "opacity-0 duration-100 ease-out"
-              : "opacity-100 duration-200 ease-in",
-            "absolute inset-0 flex h-full w-full items-center justify-center transition-opacity"
+            enabled ? "translate-x-5" : "translate-x-0",
+            "pointer-events-none relative inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"
           )}
-          aria-hidden="true"
         >
-          <SunIcon className="h-3 w-3 text-gray-400" />
+          <span
+            className={classNames(
+              enabled
+                ? "opacity-0 duration-100 ease-out"
+                : "opacity-100 duration-200 ease-in",
+              "absolute inset-0 flex h-full w-full items-center justify-center transition-opacity"
+            )}
+            aria-hidden="true"
+          >
+            <FontAwesomeIcon icon={faMoon} className="w-3 h-3 text-black" />
+          </span>
+          <span
+            className={classNames(
+              enabled
+                ? "opacity-100 duration-200 ease-in"
+                : "opacity-0 duration-100 ease-out",
+              "absolute inset-0 flex h-full w-full items-center justify-center transition-opacity"
+            )}
+            aria-hidden="true"
+          >
+            <FontAwesomeIcon icon={faSun} className="w-3 h-3 text-yellow-600" />
+          </span>
         </span>
-        <span
-          className={classNames(
-            enabled
-              ? "opacity-100 duration-200 ease-in"
-              : "opacity-0 duration-100 ease-out",
-            "absolute inset-0 flex h-full w-full items-center justify-center transition-opacity"
-          )}
-          aria-hidden="true"
-        >
-          <SunIcon className="h-3 w-3 text-yellow-600" />
-        </span>
-      </span>
-    </Switch>
+      </Switch>
+    </>
   );
 };
 
