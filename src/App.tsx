@@ -9,7 +9,7 @@ import WelcomeAnimated from "./components/WelcomeAnimated";
 
 function App() {
   return (
-    <div className="bg-gray-400 dark:bg-[#0D1117] h-full w-full lg:p-20 transition-colors duration-500 ease-in-out">
+    <div className="bg-white dark:bg-[#0D1117] h-full w-full lg:p-20 transition-colors duration-500 ease-in-out">
       <WelcomeAnimated />
       <div className="flex flex-col lg:flex-row items-start h-full gap-4">
         <div className="flex flex-col gap-4 min-w-80 w-1/5">

@@ -6,10 +6,7 @@
   "github": "https://github.com/mesparza942",
   "linkedin": "https://www.linkedin.com/in/marcelo-esparza-20506a156/",
   "aboutMe": "I am a results-driven Senior Software Engineer with 7 years of experience building scalable web applications and delivering technical solutions. My expertise lies in JavaScript and its ecosystem, with a strong focus on React.js for creating responsive and maintainable web applications. I am also experienced with Vue.js and backend technologies like Node.js and TypeScript. I thrive in agile environments, collaborating closely with cross-functional teams, and continuously adopting emerging technologies. With a full-stack perspective, I ensure seamless and impactful digital experiences from concept to deployment.",
-  "searchResultDescription": {
-    "text": ""
-  },
-  "skillsKeyWords": [
+  "searchKeyWords": [
     "JavaScript",
     "React.js",
     "Vue.js",
@@ -58,5 +55,88 @@
     "Responsive Design",
     "Accessibility",
     "SEO"
-  ]
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "JavaScript",
+      "time": "7 years",
+      "reason": "I love JavaScript because it is a versatile language that allows me to build web applications with ease. I have experience with ES6+ features, functional programming, and object-oriented programming."
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Calendar App",
+      "description": "This is an application where I built a calendar component with a feature that allows you to schedule reminders for the following 3 cities - Quito, Bogota and New York",
+      "link": "https://github.com/mesparza942/calendar-app"
+    },
+    {
+      "id": 2,
+      "name": "Pico y Placa Predictor",
+      "description": "Pico y placa is an Ecuadorian goverment law restriction for cars that have specific plate number for each weekday in order to improve the traffic in the city.",
+      "link": "https://github.com/mesparza942/picoyplaca"
+    },
+    {
+      "id": 3,
+      "name": "My Website",
+      "description": "This is my personal website where I showcase my skills, projects and experience.",
+      "link": "https://www.marceloesparza.com/"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "name": "SOLID Principles: Introducing Software Architecture & Design",
+      "platform": "Udemy",
+      "dateCompleted": "2020",
+      "link": "https://www.udemy.com/course/solid-design/",
+      "certificate": "https://www.udemy.com/certificate/UC-a6868764-c172-4085-9f0e-cd092f824236/"
+    },
+    {
+      "id": 2,
+      "name": "Version Control with Git",
+      "platform": "DataCamp",
+      "dateCompleted": "2018",
+      "link": "",
+      "certificate": "https://www.datacamp.com/completed/statement-of-accomplishment/course/03fad337100956c1c0801982b5ff1d94f6b1288b"
+    },
+    {
+      "id": 3,
+      "name": "UX Design",
+      "platform": "UXPA",
+      "dateCompleted": "2019",
+      "link": "",
+      "certificate": ""
+    },
+    {
+      "id": 4,
+      "name": "Digital Marketing & Web Analytics",
+      "platform": "Google",
+      "dateCompleted": "2019",
+      "link": "",
+      "certificate": ""
+    }
+  ],
+  "exercises": [
+    {
+      "id": 1,
+      "name": "React sortable tree component",
+      "description": "Spike to evaluate the feasibility of using a React sortable tree component and also evaluate how flexible the component is in terms of customization.",
+      "link": "https://codesandbox.io/p/sandbox/react-sortable-tree-demo-lwbsx?file=%2Fsrc%2FApp.js"
+    },
+    {
+      "id": 2,
+      "name": "Traverse Tree",
+      "description": "Exercise to traverse a tree and print each node of the tree.",
+      "link": "https://codesandbox.io/p/sandbox/traverse-tree-exercise-db2rq?file=%2Fsrc%2Findex.js"
+    },
+    {
+      "id": 3,
+      "name": "CSS Fancy Border",
+      "description": "Quick CSS fancy border with gradient.",
+      "link": "https://codesandbox.io/p/sandbox/test-border-myxpps?file=%2Fstyles.css%3A9%2C17-9%2C55"
+    }
+  ],
+  "companies": []
 }
