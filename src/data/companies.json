@@ -1,0 +1,58 @@
+{
+  "tags": [
+    "company",
+    "jobs",
+    "work",
+    "React",
+    "Developer",
+    "FullStack",
+    "JavaScript"
+  ],
+  "list": [
+    {
+      "id": 1,
+      "name": "DreamCode",
+      "position": "React Developer",
+      "period": "2019 - 2021",
+      "time": "3 years",
+      "logo": "/public/dreamcode_logo.jpeg",
+      "tags": []
+    },
+    {
+      "id": 2,
+      "name": "TrueLogic Software",
+      "position": "Software Engineer",
+      "period": "2021 - 2025",
+      "time": "~ 4 years",
+      "logo": "/public/truelogic_logo.jpeg",
+      "tags": []
+    },
+    {
+      "id": 3,
+      "name": "Xometry",
+      "position": "FullStack JS Developer",
+      "period": "2021 - 2023",
+      "time": "~ 3 years",
+      "logo": "/public/xometry_logo.jpeg",
+      "tags": []
+    },
+    {
+      "id": 4,
+      "name": "Raiinmaker",
+      "position": "Next.js Developer",
+      "period": "2024",
+      "time": "5 months",
+      "logo": "/public/raiinmaker_logo.jpeg",
+      "tags": []
+    },
+    {
+      "id": 5,
+      "name": "TMRW Life Sciences",
+      "position": "Vue Developer",
+      "period": "2024",
+      "time": "1 year",
+      "logo": "/public/tmrw_logo.jpeg",
+      "tags": []
+    }
+  ]
+}

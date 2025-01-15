@@ -1,0 +1,95 @@
+{
+  "tags": ["skills"],
+  "mainSkills": [
+    { "list": ["JavaScript", "TypeScript"] },
+    { "list": ["React.js", "Vue.js", "Next.js", "Node.js"] },
+    { "list": ["HTML", "CSS", "Accessibility", "SEO"] },
+    { "list": ["Tailwind CSS", "Styled Components", "Storybook"] },
+    { "list": ["API Rest", "GraphQL"] },
+    { "list": ["PostgreSQL", "MySQL", "Prisma"] },
+    { "list": ["Docker"] },
+    { "list": ["Coralogix", "Datadog", "CloudWatch", "Quantum Metric"] },
+    { "list": ["Monorepo", "Microfrontends", "Microservices architectures"] }
+  ],
+  "list": [
+    {
+      "id": 1,
+      "name": "JavaScript",
+      "time": "7 years",
+      "tags": ["javascript", "js", "ES6+"],
+      "reason": "I love JavaScript because it is a versatile language that allows me to build web applications with ease. I have experience with ES6+ features, functional programming, and object-oriented programming."
+    },
+    {
+      "id": 2,
+      "name": "TypeScript",
+      "time": "4 years",
+      "tags": ["typescript", "ts"],
+      "reason": "TypeScript is my go-to language for building scalable and maintainable web applications. I have experience with type annotations, interfaces, inheritance, and generics."
+    },
+    {
+      "id": 3,
+      "name": "React.js",
+      "time": "6 years",
+      "tags": ["react", "reactjs", "next", "nextjs"],
+      "reason": "React.js is my favorite library for building user interfaces. I have experience with hooks, context API, Redux, and React Router."
+    },
+    {
+      "id": 4,
+      "name": "Next.js",
+      "time": "2 years",
+      "tags": ["react", "reactjs", "next", "nextjs"],
+      "reason": "Next.js has been my go-to framework whenever I have to build a web application. I have experience with Server-Side Rendering (SSR) + Static Site Generation (SSG), two features that have given React applications such good improvements in terms of performance and SEO."
+    },
+    {
+      "id": 5,
+      "name": "Vue.js",
+      "time": "2 years",
+      "tags": ["vue", "vuejs", "pinia"],
+      "reason": "Vue.js is another library that I enjoy using for building user interfaces. I have experience with Vue Router, Vuex, Pinia, and Vue CLI."
+    },
+    {
+      "id": 6,
+      "name": "Node.js",
+      "time": "3 years",
+      "tags": ["node", "nodejs", "graphql"],
+      "reason": "Node.js is my preferred runtime environment for building server-side applications. I have experience with Express.js, RESTful APIs, and GraphQL."
+    },
+    {
+      "id": 7,
+      "name": "HTML5",
+      "time": "7 years",
+      "tags": ["html"],
+      "reason": "HTML5 is the foundation of web development. I have experience with semantic HTML, accessibility, and SEO best practices."
+    },
+    {
+      "id": 8,
+      "name": "CSS3",
+      "time": "7 years",
+      "reason": "CSS3 is essential for styling web applications. I have experience with Flexbox, Grid, animations, and responsive design."
+    },
+    {
+      "id": 9,
+      "name": "SASS",
+      "time": "4 years",
+      "reason": "SASS is my preferred CSS preprocessor for writing maintainable and scalable stylesheets. I have experience with variables, mixins, and nesting."
+    },
+    {
+      "id": 10,
+      "name": "Tailwind CSS",
+      "time": "1 year",
+      "reason": "Tailwind CSS is a utility-first CSS framework that I enjoy using for rapid prototyping and building responsive web applications."
+    },
+    {
+      "id": 11,
+      "name": "Material-UI",
+      "time": "2 years",
+      "reason": "Material-UI is a popular React component library that I use for building beautiful and accessible user interfaces."
+    },
+    {
+      "id": 12,
+      "name": "RESTful APIs",
+      "time": "3 years",
+      "reason": "RESTful APIs are the standard for building web services. I have experience"
+    }
+  ]
+}

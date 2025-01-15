@@ -1,0 +1,23 @@
+{
+  "tags": [],
+  "list": [
+    {
+      "id": 1,
+      "name": "React sortable tree component",
+      "description": "Spike to evaluate the feasibility of using a React sortable tree component and also evaluate how flexible the component is in terms of customization.",
+      "link": "https://codesandbox.io/p/sandbox/react-sortable-tree-demo-lwbsx?file=%2Fsrc%2FApp.js"
+    },
+    {
+      "id": 2,
+      "name": "Traverse Tree",
+      "description": "Exercise to traverse a tree and print each node of the tree.",
+      "link": "https://codesandbox.io/p/sandbox/traverse-tree-exercise-db2rq?file=%2Fsrc%2Findex.js"
+    },
+    {
+      "id": 3,
+      "name": "CSS Fancy Border",
+      "description": "Quick CSS fancy border with gradient.",
+      "link": "https://codesandbox.io/p/sandbox/test-border-myxpps?file=%2Fstyles.css%3A9%2C17-9%2C55"
+    }
+  ]
+}
