@@ -1,6 +1,5 @@
 import SideBar from "./components/SideBar";
 import Content from "./components/Content";
-import SearchBar from "./components/SearchBar";
 import Button from "./components/Button";
 import Container from "./components/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -28,8 +27,7 @@ function App() {
             />
           </Container>
         </div>
-        <div className="flex flex-col gap-4">
-          <SearchBar />
+        <div className="flex flex-col gap-4 w-full">
           <Content />
         </div>
       </div>
