@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 import Title from "./Title";
 import generalInfo from "../data/info.json";
 import skills from "../data/skills.json";
@@ -54,6 +57,7 @@ const ExperienceSummary = () => {
                   -{" "}
                   <a href={project.link} target="_blank">
                     {project.name}
+                    <FontAwesomeIcon icon={faGithub} className="pl-2" />
                   </a>
                 </li>
               ))}

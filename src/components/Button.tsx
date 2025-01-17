@@ -2,7 +2,7 @@ import { ComponentProps } from "react";
 
 type ButtonProps = ComponentProps<"button" | "a"> & {
   btnType?: "button" | "submit" | "link";
-  btnText: string;
+  btnText?: string;
   icon?: React.ReactNode;
 };
 
@@ -10,24 +10,26 @@ const Button = ({
   btnText,
   btnType = "button",
   icon,
+  children,
+  className = "",
   ...restProps
 }: ButtonProps) => {
   const commonClass =
     "bg-greenFav m-2 rounded-full py-1 px-3 hover:bg-opacity-80 font-semibold";
   return btnType === "link" ? (
     <a
-      className={`${commonClass} hover:text-white btn-type`}
+      className={`${commonClass} hover:text-white btn-type ${className}`}
       {...(restProps as ComponentProps<"a">)}
     >
-      {btnText}
+      {btnText ?? children}
       {icon}
     </a>
   ) : (
     <button
-      className={commonClass}
+      className={`${commonClass} ${className}`}
       {...(restProps as ComponentProps<"button">)}
     >
-      {btnText}
+      {btnText ?? children}
       {icon}
     </button>
   );
