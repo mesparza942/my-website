@@ -1,67 +1,75 @@
 {
-  "tags": [
-    "company",
-    "jobs",
-    "work",
-    "React",
-    "Developer",
-    "FullStack",
-    "JavaScript"
-  ],
   "list": [
     {
       "id": 1,
       "name": "TMRW Life Sciences",
       "position": "Vue Developer",
+      "responsibilities": "I worked as a Frontend developer improving existing code implementation such as migration of components to CompositionAPI and TypeScript. Also, my team of 4 developers built a new product called Vault Robot which required a new user experience within an existing product so we decided to implement a configuration to define the mode and display one experience or the other re-using existing logic, components and functionality.",
       "period": "2024",
       "time": "1 year",
       "logo": "/tmrw_logo.jpeg",
-      "tags": []
+      "tags": [
+        "vue",
+        "vuejs",
+        "vue.js",
+        "pinia",
+        "vuex",
+        "tmrw",
+        "typescript",
+        "ts",
+        "compositionapi",
+        "composition"
+      ]
     },
     {
       "id": 2,
       "name": "Raiinmaker",
       "position": "Next.js Developer",
+      "responsibilities": "Test",
       "period": "2024",
       "time": "5 months",
       "logo": "/raiinmaker_logo.jpeg",
-      "tags": []
+      "tags": ["test", "next", "nextjs"]
     },
     {
       "id": 3,
       "name": "Xometry",
       "position": "FullStack JS Developer",
+      "responsibilities": "Test",
       "period": "2021 - 2023",
       "time": "~ 3 years",
       "logo": "/xometry_logo.jpeg",
-      "tags": []
+      "tags": ["javascript", "typescript", "ts", "js"]
     },
     {
       "id": 4,
       "name": "TrueLogic Software",
       "position": "Software Engineer",
+      "responsibilities": "test",
       "period": "2021 - 2025",
       "time": "~ 4 years",
       "logo": "/truelogic_logo.jpeg",
-      "tags": []
+      "tags": ["javascript", "typescript", "ts", "js"]
     },
     {
       "id": 5,
       "name": "DreamCode",
       "position": "React Developer",
+      "responsibilities": "test",
       "period": "2019 - 2021",
       "time": "3 years",
       "logo": "/dreamcode_logo.jpeg",
-      "tags": []
+      "tags": ["javascript", "typescript", "ts", "js"]
     },
     {
       "id": 6,
       "name": "Elementor",
       "position": "Technical Support Engineer",
+      "responsibilities": "Provided technical assistance (Wordpress, hosting, HTML/CSS) to customers worldwide. I became an expert of troubleshooting UI issues most commonly HTML & CSS issues.",
       "period": "2019",
       "time": "5 months",
       "logo": "/elementor_logo.jpeg",
-      "tags": []
+      "tags": ["wordpress", "cms", "css", "html", "seo", "elementor", "plugin"]
     }
   ]
 }

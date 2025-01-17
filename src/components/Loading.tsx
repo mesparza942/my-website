@@ -1,6 +1,6 @@
 const Loading = () => {
   return (
-    <div className="w-full h-[3px] bg-gradient-to-r from-greenFav bg-loading-pos animate-loading" />
+    <div className="w-full h-[4px] bg-[#bbfcb8] bg-no-repeat bg-loading-pos bg-loading-img animate-loading rounded-xl" />
   );
 };
 

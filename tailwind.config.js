@@ -31,6 +31,10 @@ export default {
       colors: {
         greenFav: "#00b000",
       },
+      backgroundImage: {
+        "loading-img":
+          "linear-gradient(rgb(0, 176, 0) 0px, rgb(0, 176, 0) 0px), linear-gradient(rgb(0, 176, 0) 0px, rgb(0, 176, 0) 0px);",
+      },
     },
   },
   plugins: [],

@@ -1,12 +1,16 @@
-import SearchAboutMe from "./SearchAboutMe";
+import SearchProjects from "./SearchProjects";
+import SearchCompanies from "./SearchCompanies";
+import SearchCourses from "./SearchCourses";
+import SearchExercises from "./SearchExercises";
+import type { SearchResultsProps } from "../utils/types";
 
-interface SearchResultsProps {
-  searchTerm: string;
-}
 const SearchResults = ({ searchTerm }: SearchResultsProps) => {
   return (
     <>
-      <SearchAboutMe searchTerm={searchTerm} />
+      <SearchProjects searchTerm={searchTerm} />
+      <SearchCourses searchTerm={searchTerm} />
+      <SearchExercises searchTerm={searchTerm} />
+      <SearchCompanies searchTerm={searchTerm} />
     </>
   );
 };

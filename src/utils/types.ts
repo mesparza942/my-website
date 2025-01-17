@@ -52,6 +52,7 @@ export interface ICompanies extends ISearchTags {
     id: number;
     name: string;
     position: string;
+    responsibilities: string;
     period: string;
     time: string;
     logo: string;
@@ -65,5 +66,10 @@ export interface IExercises extends ISearchTags {
     name: string;
     description: string;
     link: string;
+    tags: string[];
   }[];
+}
+
+export interface SearchResultsProps {
+  searchTerm: string;
 }

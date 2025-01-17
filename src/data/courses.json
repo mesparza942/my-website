@@ -1,5 +1,12 @@
 {
-  "tags": [],
+  "tags": [
+    "solid",
+    "single responsibility",
+    "design patterns",
+    "git",
+    "User Experience",
+    "analytics"
+  ],
   "list": [
     {
       "id": 1,

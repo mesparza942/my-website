@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from "react";
+
 import Loading from "./Loading";
 import Container from "./Container";
 import SearchBar from "./SearchBar";
@@ -6,22 +8,26 @@ import SearchResults from "./SearchResults";
 
 import { useDebounce } from "../utils/useDebounce";
 
-/* HTML: <div class="loader"></div> */
-// .loader {
-//   height: 4px;
-//   width: 130px;
-//   --c:no-repeat linear-gradient(#6100ee 0 0);
-//   background: var(--c),var(--c),#d7b8fc;
-//   background-size: 60% 100%;
-//   animation: l16 3s infinite;
-// }
-
 const Content = () => {
   const [search, setSearch] = useDebounce("", 500);
+  const [loading, setLoading] = useState(false);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleSearch = (newVal: string) => {
+    setLoading(true);
+    setSearch(newVal);
+    timeoutRef.current = setTimeout(() => setLoading(false), 800);
+  };
+
+  useEffect(() => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }, [timeoutRef]);
   return (
     <>
-      <SearchBar value={search} onChange={(newVal) => setSearch(newVal)} />
-      <Loading />
+      <SearchBar value={search} onChange={handleSearch} />
+      {loading ? <Loading /> : null}
       <Container className="w-full p-4">
         {search ? <SearchResults searchTerm={search} /> : <ExperienceSummary />}
       </Container>

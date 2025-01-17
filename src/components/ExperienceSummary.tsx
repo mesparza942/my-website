@@ -25,58 +25,72 @@ const ExperienceSummary = () => {
       <Title label="About Me" />
       <p className="py-2">{generalInfo.aboutMe}</p>
       <div className="grid grid-cols-2 gap-4 my-4">
-        <div>
-          <Title label="Main Skills" />
-          <ul>
-            {mySkills.mainSkills.map((skillSet, idx) => (
-              <li key={idx}>⭑ {skillSet.list.join(", ")}</li>
-            ))}
-          </ul>
-          <Title label="Courses" />
-          <ul>
-            {myCourses.list.map((course) => (
-              <li key={course.id}>
-                ⭑ {course.name} - {course.platform}
-              </li>
-            ))}
-          </ul>
+        <div className="flex flex-col gap-4">
+          <div>
+            <Title label="Main Skills" />
+            <ul>
+              {mySkills.mainSkills.map((skillSet, idx) => (
+                <li key={idx}>⭑ {skillSet.list.join(", ")}</li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <Title label="Courses" />
+            <ul>
+              {myCourses.list.map((course) => (
+                <li key={course.id}>
+                  ⭑ {course.name} - {course.platform}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div>
-          <Title label="Projects" />
-          <ul>
-            {myProjects.list.map((project) => (
-              <li key={project.id}>
-                -{" "}
-                <a href={project.link} target="_blank">
-                  {project.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <Title label="Code Excercises" />
-          <ul>
-            {myExercises.list.map((codeExercise) => (
-              <li key={codeExercise.id}>
-                -{" "}
-                <a href={codeExercise.link} target="_blank">
-                  {codeExercise.name}
-                </a>
-              </li>
-            ))}
-          </ul>
+        <div className="flex flex-col gap-4">
+          <div>
+            <Title label="Projects" />
+            <ul>
+              {myProjects.list.map((project) => (
+                <li key={project.id}>
+                  -{" "}
+                  <a href={project.link} target="_blank">
+                    {project.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <Title label="Code Exercises" />
+            <ul>
+              {myExercises.list.map((codeExercise) => (
+                <li key={codeExercise.id}>
+                  -{" "}
+                  <a href={codeExercise.link} target="_blank">
+                    {codeExercise.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
-      <Title label="Companies I have worked for" />
-      <div className="grid grid-cols-3 gap-4 py-2">
-        {jobCompanies.list.map((company) => (
-          <div className="flex items-center gap-2">
-            <img className="w-16 h-16" src={company.logo} alt="TMRW Logo" />
-            <div className="flex flex-col">
-              <span className="text-lg font-bold">{company.name}</span>
-              <span className="text-sm">{company.time}</span>
+      <div className="mt-4">
+        <Title label="Companies I have worked for" />
+        <div className="grid grid-cols-3 gap-4 py-2">
+          {jobCompanies.list.map((company) => (
+            <div key={company.id} className="flex items-center gap-2">
+              <img
+                className="w-16 h-16"
+                src={company.logo}
+                alt={`${company.name} logo`}
+              />
+              <div className="flex flex-col">
+                <span className="text-lg font-bold">{company.name}</span>
+                <span className="text-sm">{company.time}</span>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );
