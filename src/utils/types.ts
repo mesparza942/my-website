@@ -70,6 +70,12 @@ export interface IExercises extends ISearchTags {
   }[];
 }
 
+export interface IEducation {
+  university: string;
+  dateGraduated: string;
+  degree: string;
+}
+
 export interface SearchResultsProps {
   searchTerm: string;
 }

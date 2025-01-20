@@ -8,12 +8,14 @@ import projects from "../data/projects.json";
 import exercises from "../data/exercises.json";
 import courses from "../data/courses.json";
 import companies from "../data/companies.json";
+import education from "../data/education.json";
 import type {
   ISkills,
   IProjects,
   ICompanies,
   ICourses,
   IExercises,
+  IEducation,
 } from "../utils/types";
 
 const mySkills = skills as ISkills;
@@ -21,6 +23,7 @@ const myProjects = projects as IProjects;
 const myExercises = exercises as IExercises;
 const myCourses = courses as ICourses;
 const jobCompanies = companies as ICompanies;
+const myEducation = education as IEducation;
 
 const ExperienceSummary = () => {
   return (
@@ -42,7 +45,7 @@ const ExperienceSummary = () => {
             <ul>
               {myCourses.list.map((course) => (
                 <li key={course.id}>
-                  ⭑ {course.name} - {course.platform}
+                  - {course.name} - {course.platform}
                 </li>
               ))}
             </ul>
@@ -75,6 +78,15 @@ const ExperienceSummary = () => {
                 </li>
               ))}
             </ul>
+          </div>
+          <div>
+            <Title label="Education" />
+            <div>
+              <h2 className="text-xl font-bold">{myEducation.university}</h2>
+              <span className="text-base">
+                {myEducation.degree} - {myEducation.dateGraduated}
+              </span>
+            </div>
           </div>
         </div>
       </div>

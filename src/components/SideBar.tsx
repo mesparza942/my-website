@@ -8,7 +8,7 @@ import {
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import ThemeToggle from "./ThemeToggle";
-import { getFormattedLocalTime } from "../utils/dateTime";
+import { getFormattedEcuadorTime } from "../utils/dateTime";
 import Container from "./Container";
 import generalInfo from "../data/info.json";
 import type { IMyInfo } from "../utils/types";
@@ -41,7 +41,7 @@ const SideBar = () => {
         </span>
         <span>
           <FontAwesomeIcon icon={faClock} className="pr-2" />
-          {getFormattedLocalTime()}
+          {getFormattedEcuadorTime()}
         </span>
         <span>
           <FontAwesomeIcon icon={faEnvelope} className="pr-2" />
