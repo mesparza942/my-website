@@ -6,7 +6,7 @@
     { "list": ["HTML", "CSS", "Accessibility", "SEO"] },
     { "list": ["Tailwind CSS", "Styled Components", "Storybook"] },
     { "list": ["API Rest", "GraphQL"] },
-    { "list": ["PostgreSQL", "MySQL", "Prisma"] },
+    { "list": ["PostgreSQL", "MySQL", "Prisma", "Objection.js"] },
     { "list": ["Docker"] },
     { "list": ["Coralogix", "Datadog", "CloudWatch", "Quantum Metric"] },
     { "list": ["Monorepo", "Microfrontends", "Microservices architectures"] }

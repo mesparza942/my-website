@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 import Title from "./Title";
 import generalInfo from "../data/info.json";
@@ -36,7 +37,10 @@ const ExperienceSummary = () => {
             <Title label="Main Skills" />
             <ul>
               {mySkills.mainSkills.map((skillSet, idx) => (
-                <li key={idx}>⭑ {skillSet.list.join(", ")}</li>
+                <li key={idx}>
+                  <span className="text-greenFav">⭑</span>{" "}
+                  {skillSet.list.join(", ")}
+                </li>
               ))}
             </ul>
           </div>
@@ -74,6 +78,7 @@ const ExperienceSummary = () => {
                   -{" "}
                   <a href={codeExercise.link} target="_blank">
                     {codeExercise.name}
+                    <FontAwesomeIcon icon={faCode} className="pl-2" />
                   </a>
                 </li>
               ))}

@@ -15,7 +15,7 @@ const Button = ({
   ...restProps
 }: ButtonProps) => {
   const commonClass =
-    "bg-greenFav rounded-full py-1 px-4 hover:bg-opacity-80 font-semibold";
+    "bg-greenFav rounded-full py-2 px-4 hover:bg-opacity-80 font-semibold text-white";
   return btnType === "link" ? (
     <a
       className={`${commonClass} hover:text-white btn-type ${className}`}
