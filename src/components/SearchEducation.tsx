@@ -7,6 +7,7 @@ const SearchEducation = ({ searchTerm }: SearchResultsProps) => {
   const results = useSearch<IEducation>({
     searchTerm,
     data: [educationInfo],
+    dataType: "Education",
     searchKeys: ["tags"],
   });
 

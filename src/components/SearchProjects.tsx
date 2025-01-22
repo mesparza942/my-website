@@ -14,6 +14,7 @@ const SearchProjects = ({ searchTerm }: SearchResultsProps) => {
   const results = useSearch<IProject>({
     searchTerm,
     data: projects,
+    dataType: "Projects",
     searchKeys: ["name", "description", "tags"],
   });
 

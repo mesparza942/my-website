@@ -11,6 +11,7 @@ const SearchCompanies = ({ searchTerm }: SearchResultsProps) => {
   const jobCompanies = useSearch<ICompany>({
     searchTerm,
     data: companies,
+    dataType: "Companies",
     searchKeys: ["name", "position", "responsibilities", "tags"],
   });
 

@@ -12,6 +12,7 @@ const SearchExercises = ({ searchTerm }: SearchResultsProps) => {
   const results = useSearch<IExercise>({
     searchTerm,
     data: exercises,
+    dataType: "Exercises",
     searchKeys: ["name", "description", "tags"],
   });
 

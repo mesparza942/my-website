@@ -11,6 +11,7 @@ const SearchSkills = ({ searchTerm }: SearchResultsProps) => {
   const results = useSearch<ISkill>({
     searchTerm,
     data: skills,
+    dataType: "Skills",
     searchKeys: ["name", "tags"],
   });
 

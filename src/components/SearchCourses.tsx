@@ -12,6 +12,7 @@ const SearchCourses = ({ searchTerm }: SearchResultsProps) => {
   const results = useSearch<ICourse>({
     searchTerm,
     data: courses,
+    dataType: "Courses",
     searchKeys: ["name", "tags"],
   });
 
