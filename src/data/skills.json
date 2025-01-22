@@ -1,7 +1,6 @@
 {
-  "tags": ["skills"],
   "mainSkills": [
-    { "list": ["JavaScript", "TypeScript"] },
+    { "list": ["JavaScript/TypeScript"] },
     { "list": ["React.js", "Vue.js", "Next.js", "Node.js"] },
     { "list": ["HTML", "CSS", "Accessibility", "SEO"] },
     { "list": ["Tailwind CSS", "Styled Components", "Storybook"] },
@@ -43,8 +42,8 @@
     {
       "id": 5,
       "name": "Vue.js",
-      "time": "2 years",
-      "tags": ["vue", "vuejs", "pinia"],
+      "time": "1 year",
+      "tags": ["vue", "vuejs", "vuex"],
       "reason": "Vue.js is another library that I enjoy using for building user interfaces. I have experience with Vue Router, Vuex, Pinia, and Vue CLI."
     },
     {
@@ -65,31 +64,22 @@
       "id": 8,
       "name": "CSS3",
       "time": "7 years",
+      "tags": ["css", "styles", "animations", "responsive", "media queries"],
       "reason": "CSS3 is essential for styling web applications. I have experience with Flexbox, Grid, animations, and responsive design."
     },
     {
       "id": 9,
-      "name": "SASS",
-      "time": "4 years",
-      "reason": "SASS is my preferred CSS preprocessor for writing maintainable and scalable stylesheets. I have experience with variables, mixins, and nesting."
-    },
-    {
-      "id": 10,
       "name": "Tailwind CSS",
-      "time": "1 year",
+      "time": "2 years",
+      "tags": ["css", "styles", "animations", "responsive", "media queries"],
       "reason": "Tailwind CSS is a utility-first CSS framework that I enjoy using for rapid prototyping and building responsive web applications."
     },
     {
-      "id": 11,
-      "name": "Material-UI",
-      "time": "2 years",
-      "reason": "Material-UI is a popular React component library that I use for building beautiful and accessible user interfaces."
-    },
-    {
-      "id": 12,
-      "name": "RESTful APIs",
-      "time": "3 years",
-      "reason": "RESTful APIs are the standard for building web services. I have experience"
+      "id": 10,
+      "name": "RESTful APIs/GraphQL",
+      "time": "5 years",
+      "tags": ["api", "rest", "gql", "web services", "microservices"],
+      "reason": "RESTful APIs are the standard for building web services. GraphQL is an advanced way to fetch data, recommended for complex data structures."
     }
   ]
 }

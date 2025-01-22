@@ -4,27 +4,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Title from "./Title";
 import { useSearch } from "../utils/useSearch";
 import exercisesInfo from "../data/exercises.json";
-import type { IExercises, SearchResultsProps } from "../utils/types";
+import type { IExercise, SearchResultsProps } from "../utils/types";
 
-const exercises = exercisesInfo as IExercises;
+const exercises = exercisesInfo as IExercise[];
 
 const SearchExercises = ({ searchTerm }: SearchResultsProps) => {
-  const results = useSearch<IExercises>({
+  const results = useSearch<IExercise>({
     searchTerm,
     data: exercises,
-    searchKeys: ["list.name", "list.description", "list.tags"],
+    searchKeys: ["name", "description", "tags"],
   });
 
   return (
     <>
-      {results?.list.length ? (
+      {results?.length ? (
         <>
           <Title label="Exercises" />
           <div className="grid grid-cols-2 gap-8 mb-8">
-            {results.list.map((exercise) => (
+            {results.map(({ item: exercise }) => (
               <div key={exercise.id}>
                 <h2>
-                  <a href={exercise.link} className="text-greenFav font-bold">
+                  <a
+                    href={exercise.link}
+                    target="_blank"
+                    className="text-greenFav font-bold"
+                  >
                     {exercise.name}
                     <FontAwesomeIcon
                       icon={faUpRightFromSquare}

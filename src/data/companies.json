@@ -1,75 +1,134 @@
-{
-  "list": [
-    {
-      "id": 1,
-      "name": "TMRW Life Sciences",
-      "position": "Vue Developer",
-      "responsibilities": "I worked as a Frontend developer improving existing code implementation such as migration of components to CompositionAPI and TypeScript. Also, my team of 4 developers built a new product called Vault Robot which required a new user experience within an existing product so we decided to implement a configuration to define the mode and display one experience or the other re-using existing logic, components and functionality.",
-      "period": "2024",
-      "time": "1 year",
-      "logo": "/tmrw_logo.jpeg",
-      "tags": [
-        "vue",
-        "vuejs",
-        "vue.js",
-        "pinia",
-        "vuex",
-        "tmrw",
-        "typescript",
-        "ts",
-        "compositionapi",
-        "composition"
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Raiinmaker",
-      "position": "Next.js Developer",
-      "responsibilities": "Test",
-      "period": "2024",
-      "time": "5 months",
-      "logo": "/raiinmaker_logo.jpeg",
-      "tags": ["test", "next", "nextjs"]
-    },
-    {
-      "id": 3,
-      "name": "Xometry",
-      "position": "FullStack JS Developer",
-      "responsibilities": "Test",
-      "period": "2021 - 2023",
-      "time": "~ 3 years",
-      "logo": "/xometry_logo.jpeg",
-      "tags": ["javascript", "typescript", "ts", "js"]
-    },
-    {
-      "id": 4,
-      "name": "TrueLogic Software",
-      "position": "Software Engineer",
-      "responsibilities": "test",
-      "period": "2021 - 2025",
-      "time": "~ 4 years",
-      "logo": "/truelogic_logo.jpeg",
-      "tags": ["javascript", "typescript", "ts", "js"]
-    },
-    {
-      "id": 5,
-      "name": "DreamCode",
-      "position": "React Developer",
-      "responsibilities": "test",
-      "period": "2019 - 2021",
-      "time": "3 years",
-      "logo": "/dreamcode_logo.jpeg",
-      "tags": ["javascript", "typescript", "ts", "js"]
-    },
-    {
-      "id": 6,
-      "name": "Elementor",
-      "position": "Technical Support Engineer",
-      "responsibilities": "Provided technical assistance (Wordpress, hosting, HTML/CSS) to customers worldwide. I became an expert of troubleshooting UI issues most commonly HTML & CSS issues.",
-      "period": "2019",
-      "time": "5 months",
-      "logo": "/elementor_logo.jpeg",
-      "tags": ["wordpress", "cms", "css", "html", "seo", "elementor", "plugin"]
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "name": "TMRW Life Sciences",
+    "position": "Vue Developer",
+    "responsibilities": [
+      "Vue, Vuex, TailwindCSS",
+      "Migrated complex modules from Vuex to Pinia",
+      "Migration of components from OptionsAPI to CompositionAPI and TypeScript.",
+      "Built a new product called Vault Robot which required a new user experience within an existing product so we decided to implement a feature flag.",
+      "Cypress"
+    ],
+    "period": "2024",
+    "time": "1 year",
+    "logo": "/tmrw_logo.jpeg",
+    "tags": [
+      "vue",
+      "vuejs",
+      "vue.js",
+      "pinia",
+      "vuex",
+      "tmrw",
+      "typescript",
+      "ts",
+      "compositionapi",
+      "composition"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Raiinmaker",
+    "position": "Next.js Developer",
+    "responsibilities": [
+      "Seasonal Contract to implement best practices, SSR/SSG, and improve styling with TailwindCSS on a Next.js project.",
+      "Migrated all compatible client pages to SSR/SSG",
+      "Improved User Interface, and Apply responsiveness with TailwindCSS",
+      "Created re-usable hook for fetching data using SWR",
+      "Enhanced Error handling with Next.js"
+    ],
+    "period": "2024",
+    "time": "5 months",
+    "logo": "/raiinmaker_logo.jpeg",
+    "tags": [
+      "react",
+      "reactjs",
+      "next",
+      "nextjs",
+      "tailwindcss",
+      "tailwind",
+      "coiin"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Xometry",
+    "position": "FullStack JS Developer",
+    "responsibilities": [
+      "Created a new CMS from scratch with Next.js and GraphQL.",
+      "Replaced PHP code from website with an improved UI/UX using React and GraphQL enhancing website's performance.",
+      "Create and Maintain Microservices - API Rest & GraphQL",
+      "Implemented Feature Flags and A/B Testing with Split.io",
+      "Implemented a Chat between Suppliers and Buyers using getstream.io"
+    ],
+    "period": "2021 - 2024",
+    "time": "~ 3 years",
+    "logo": "/xometry_logo.jpeg",
+    "tags": ["javascript", "react", "reactjs", "typescript", "ts", "js"]
+  },
+  {
+    "id": 4,
+    "name": "TrueLogic Software",
+    "position": "Software Engineer",
+    "responsibilities": [
+      "Work for Xometry: FullStack JS Developer (ReactJs, NextJs, TypeScript, Express, Prisma, GraphQL)",
+      "Work for TMRW Life Sciences: Vue Developer (Vue, TailwindCSS, Vue3, TypeScript, Pinia, OpenAPI)"
+    ],
+    "period": "2021 - 2025",
+    "time": "~ 4 years",
+    "logo": "/truelogic_logo.jpeg",
+    "tags": [
+      "javascript",
+      "react",
+      "reactjs",
+      "vue",
+      "vuejs",
+      "vuex",
+      "next",
+      "nextjs",
+      "typescript",
+      "ts",
+      "js",
+      "orm"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "DreamCode",
+    "position": "React Developer",
+    "responsibilities": [
+      "Create Complex React components for complex data structures such as Trees.",
+      "Styled Components, Monorepo, Material-UI",
+      "Create and Maintain Microservices - API Rest & GraphQL",
+      "Bitbucket as the source code and Docker container autogenerated for each PR.",
+      "Minimal percentage of code coverage with Unit Tests and at least 2 code reviews."
+    ],
+    "period": "2019 - 2021",
+    "time": "3 years",
+    "logo": "/dreamcode_logo.jpeg",
+    "tags": ["javascript", "typescript", "ts", "js", "reactjs"]
+  },
+  {
+    "id": 6,
+    "name": "Elementor",
+    "position": "Technical Support Engineer",
+    "responsibilities": [
+      "Provided technical support (Wordpress, hosting, HTML/CSS) to customers worldwide.",
+      "I became an expert of troubleshooting UI issues most commonly HTML & CSS issues.",
+      "SEO"
+    ],
+    "period": "2019",
+    "time": "5 months",
+    "logo": "/elementor_logo.jpeg",
+    "tags": [
+      "wordpress",
+      "wp",
+      "cms",
+      "css",
+      "html",
+      "seo",
+      "elementor",
+      "plugin"
+    ]
+  }
+]

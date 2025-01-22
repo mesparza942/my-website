@@ -4,31 +4,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Title from "./Title";
 import { useSearch } from "../utils/useSearch";
 import coursesInfo from "../data/courses.json";
-import type { ICourses, SearchResultsProps } from "../utils/types";
-import { useMemo } from "react";
+import type { ICourse, SearchResultsProps } from "../utils/types";
 
-const courses = coursesInfo as ICourses;
+const courses = coursesInfo as ICourse[];
 
 const SearchCourses = ({ searchTerm }: SearchResultsProps) => {
-  const results = useSearch<ICourses>({
+  const results = useSearch<ICourse>({
     searchTerm,
     data: courses,
-    searchKeys: ["list.name", "tags"],
+    searchKeys: ["name", "tags"],
   });
-
-  const coursesResults = useMemo(() => {
-    return results?.list.filter((item) =>
-      item.name.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-  }, [results, searchTerm]);
 
   return (
     <>
-      {coursesResults?.length ? (
+      {results?.length ? (
         <>
           <Title label="Courses" />
           <div className="grid grid-cols-4 gap-4 mb-4">
-            {coursesResults.map((course) => (
+            {results.map(({ item: course }) => (
               <div key={course.id} className="border-green-300 rounded-xl p-2">
                 <p className="font-bold">
                   ⭑ {course.name} - {course.platform}

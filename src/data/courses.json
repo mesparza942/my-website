@@ -1,44 +1,45 @@
-{
-  "tags": [
-    "solid",
-    "single responsibility",
-    "design patterns",
-    "git",
-    "User Experience",
-    "analytics"
-  ],
-  "list": [
-    {
-      "id": 1,
-      "name": "SOLID Principles",
-      "platform": "Udemy",
-      "dateCompleted": "2020",
-      "link": "https://www.udemy.com/course/solid-design/",
-      "certificate": "https://www.udemy.com/certificate/UC-a6868764-c172-4085-9f0e-cd092f824236/"
-    },
-    {
-      "id": 2,
-      "name": "Version Control with Git",
-      "platform": "DataCamp",
-      "dateCompleted": "2018",
-      "link": "",
-      "certificate": "https://www.datacamp.com/completed/statement-of-accomplishment/course/03fad337100956c1c0801982b5ff1d94f6b1288b"
-    },
-    {
-      "id": 3,
-      "name": "UX Design",
-      "platform": "UXPA",
-      "dateCompleted": "2019",
-      "link": "",
-      "certificate": ""
-    },
-    {
-      "id": 4,
-      "name": "Digital Marketing & Web Analytics",
-      "platform": "Google",
-      "dateCompleted": "2019",
-      "link": "",
-      "certificate": ""
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "name": "SOLID Principles",
+    "platform": "Udemy",
+    "dateCompleted": "2020",
+    "link": "https://www.udemy.com/course/solid-design/",
+    "certificate": "https://www.udemy.com/certificate/UC-a6868764-c172-4085-9f0e-cd092f824236/",
+    "tags": [
+      "solid",
+      "principles",
+      "single responsibility",
+      "design patterns",
+      "oop",
+      "object oriented programming"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Version Control with Git",
+    "platform": "DataCamp",
+    "dateCompleted": "2018",
+    "link": "",
+    "certificate": "https://www.datacamp.com/completed/statement-of-accomplishment/course/03fad337100956c1c0801982b5ff1d94f6b1288b",
+    "tags": ["git", "github", "gitlab", "version control", "datacamp"]
+  },
+  {
+    "id": 3,
+    "name": "UX Design",
+    "platform": "UXPA",
+    "dateCompleted": "2019",
+    "link": "",
+    "certificate": "",
+    "tags": ["ux", "ui", "user interface", "frontend", "react", "reacjs"]
+  },
+  {
+    "id": 4,
+    "name": "Digital Marketing & Web Analytics",
+    "platform": "Google",
+    "dateCompleted": "2019",
+    "link": "",
+    "certificate": "",
+    "tags": ["marketing", "analytics", "google analytics", "wordpress"]
+  }
+]

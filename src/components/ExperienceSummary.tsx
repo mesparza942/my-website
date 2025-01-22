@@ -11,19 +11,18 @@ import courses from "../data/courses.json";
 import companies from "../data/companies.json";
 import education from "../data/education.json";
 import type {
-  ISkills,
-  IProjects,
-  ICompanies,
-  ICourses,
-  IExercises,
+  IProject,
+  ICompany,
+  ICourse,
+  IExercise,
   IEducation,
 } from "../utils/types";
 
-const mySkills = skills as ISkills;
-const myProjects = projects as IProjects;
-const myExercises = exercises as IExercises;
-const myCourses = courses as ICourses;
-const jobCompanies = companies as ICompanies;
+const mySkills = skills.mainSkills as { list: string[] }[];
+const myProjects = projects as IProject[];
+const myExercises = exercises as IExercise[];
+const myCourses = courses as ICourse[];
+const jobCompanies = companies as ICompany[];
 const myEducation = education as IEducation;
 
 const ExperienceSummary = () => {
@@ -36,7 +35,7 @@ const ExperienceSummary = () => {
           <div>
             <Title label="Main Skills" />
             <ul>
-              {mySkills.mainSkills.map((skillSet, idx) => (
+              {mySkills.map((skillSet, idx) => (
                 <li key={idx}>
                   <span className="text-greenFav">⭑</span>{" "}
                   {skillSet.list.join(", ")}
@@ -47,7 +46,7 @@ const ExperienceSummary = () => {
           <div>
             <Title label="Courses" />
             <ul>
-              {myCourses.list.map((course) => (
+              {myCourses.map((course) => (
                 <li key={course.id}>
                   - {course.name} - {course.platform}
                 </li>
@@ -59,7 +58,7 @@ const ExperienceSummary = () => {
           <div>
             <Title label="Projects" />
             <ul>
-              {myProjects.list.map((project) => (
+              {myProjects.map((project) => (
                 <li key={project.id}>
                   -{" "}
                   <a href={project.link} target="_blank">
@@ -73,7 +72,7 @@ const ExperienceSummary = () => {
           <div>
             <Title label="Code Exercises" />
             <ul>
-              {myExercises.list.map((codeExercise) => (
+              {myExercises.map((codeExercise) => (
                 <li key={codeExercise.id}>
                   -{" "}
                   <a href={codeExercise.link} target="_blank">
@@ -98,7 +97,7 @@ const ExperienceSummary = () => {
       <div className="mt-4">
         <Title label="Companies I have worked for" />
         <div className="grid grid-cols-3 gap-4 py-2">
-          {jobCompanies.list.map((company) => (
+          {jobCompanies.map((company) => (
             <div key={company.id} className="flex items-center gap-2">
               <img
                 className="w-16 h-16"

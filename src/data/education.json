@@ -1,5 +1,13 @@
 {
   "university": "Pontificia Universidad Católica del Ecuador (PUCE)",
   "dateGraduated": "2018",
-  "degree": "Ingeniería en Sistemas y Computación"
+  "degree": "Ingeniería en Sistemas y Computación",
+  "tags": [
+    "education",
+    "university",
+    "degree",
+    "graduated",
+    "software engineer",
+    "college"
+  ]
 }
