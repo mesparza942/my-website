@@ -36,13 +36,15 @@ const ThemeToggle = () => {
         onChange={handleThemeChange}
         title="Toggle theme"
         className={classNames(
-          "relative bg-greenFav inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out"
+          "relative bg-greenFav inline-flex h-6 w-11 sm:h-9 sm:w-16 xl:h-6 xl:w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out"
         )}
       >
         <span
           className={classNames(
-            enabled ? "translate-x-5" : "translate-x-0",
-            "pointer-events-none relative inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"
+            enabled
+              ? "translate-x-5 lg:translate-x-7 xl:translate-x-5"
+              : "translate-x-0",
+            "pointer-events-none relative inline-block h-5 w-5 md:h-8 md:w-8 xl:h-5 xl:w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"
           )}
         >
           <span
@@ -54,7 +56,10 @@ const ThemeToggle = () => {
             )}
             aria-hidden="true"
           >
-            <FontAwesomeIcon icon={faMoon} className="w-3 h-3 text-black" />
+            <FontAwesomeIcon
+              icon={faMoon}
+              className="w-3 h-3 sm:w-6 sm:h-6 xl:w-3 xl:h-3 text-black"
+            />
           </span>
           <span
             className={classNames(
@@ -65,7 +70,10 @@ const ThemeToggle = () => {
             )}
             aria-hidden="true"
           >
-            <FontAwesomeIcon icon={faSun} className="w-3 h-3 text-yellow-600" />
+            <FontAwesomeIcon
+              icon={faSun}
+              className="w-3 h-3 sm:w-6 sm:h-6 xl:w-3 xl:h-3 text-yellow-600"
+            />
           </span>
         </span>
       </Switch>

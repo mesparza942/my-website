@@ -30,7 +30,7 @@ const ExperienceSummary = () => {
     <>
       <Title label="About Me" />
       <p className="py-2">{generalInfo.aboutMe}</p>
-      <div className="grid grid-cols-2 gap-4 my-4">
+      <div className="flex flex-col md:grid md:grid-cols-2 gap-4 my-4">
         <div className="flex flex-col gap-4">
           <div>
             <Title label="Main Skills" />
@@ -96,7 +96,7 @@ const ExperienceSummary = () => {
       </div>
       <div className="mt-4">
         <Title label="Companies I have worked for" />
-        <div className="grid grid-cols-3 gap-4 py-2">
+        <div className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 gap-4 py-2">
           {jobCompanies.map((company) => (
             <div key={company.id} className="flex items-center gap-2">
               <img
@@ -106,7 +106,9 @@ const ExperienceSummary = () => {
               />
               <div className="flex flex-col">
                 <span className="text-lg font-bold">{company.name}</span>
-                <span className="text-sm">{company.time}</span>
+                <span className="text-sm">
+                  {company.time} ({company.period})
+                </span>
               </div>
             </div>
           ))}
