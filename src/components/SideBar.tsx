@@ -62,9 +62,13 @@ const SideBar = () => {
       </div>
       <div className="hidden sm:flex xl:hidden">
         <div className="w-1/2">
-          <img src={myInfo.photo} alt="Marcelo Esparza" className="w-full" />
+          <img
+            src={myInfo.photo}
+            alt="Marcelo Esparza"
+            className="w-full rounded-bl-lg"
+          />
         </div>
-        <MyInfo className="w-1/2 text-2xl gap-8" />
+        <MyInfo className="w-1/2 text-2xl gap-6" />
       </div>
       <div className="block sm:hidden xl:block">
         <img src={myInfo.photo} alt="Marcelo Esparza" className="w-full" />
