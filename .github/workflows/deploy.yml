@@ -23,8 +23,11 @@ jobs:
       - name: Build Project
         run: npm run build
 
+      - name: Show current working directory
+        run: pwd
+
       - name: List directory contents
-        run: ls -alh
+        run: ls -alh dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
