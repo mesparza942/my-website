@@ -27,10 +27,10 @@ jobs:
         run: pwd
 
       - name: List directory contents
-        run: ls -alh my-website/dist # Check if the dist folder is present
+        run: ls -alh dist # Check if the dist folder is present
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: my-website/dist # Correct path to the dist folder
+          publish_dir: dist # Correct path to the dist folder
