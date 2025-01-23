@@ -1,7 +1,6 @@
 {
   "name": "my-website",
   "private": true,
-  "homepage": "https://www.marceloesparza.com",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
