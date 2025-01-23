@@ -19,6 +19,6 @@ export function trackSearchEvent(
     }
   } else {
     // eslint-disable-next-line
-    console.error("Google Analytics (gtag) is not initialized.");
+    console.error("Google Analytics (gtag) is not initialized");
   }
 }
