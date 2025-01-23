@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 18
 
@@ -26,14 +26,11 @@ jobs:
       - name: Show current working directory
         run: pwd
 
-      - name: List 'my-website' directory contents
-        run: ls -alh my-website
-
       - name: List dist folder contents
-        run: ls -alh my-website/my-website/dist # Correct path to dist
+        run: ls -alh dist # Correct path to dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: my-website/my-website/dist # Correct path to the dist folder
+          publish_dir: ./ # Correct path to the dist folder
