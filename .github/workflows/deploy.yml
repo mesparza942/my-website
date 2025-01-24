@@ -23,11 +23,8 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Show current working directory
-        run: pwd
-
-      - name: List dist folder contents
-        run: ls -alh dist
+      - name: Add CNAME file
+        run: echo 'www.marceloesparza.com' > ./dist/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

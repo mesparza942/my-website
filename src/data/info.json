@@ -2,7 +2,7 @@
   "name": "Marcelo Esparza",
   "job": "Software Engineer",
   "jobCompany": "TMRW Life Sciences",
-  "photo": "/mesparza.jpg",
+  "photo": "./mesparza.jpg",
   "location": "Quito - Ecuador",
   "email": "maresparzam@gmail.com",
   "github": "https://github.com/mesparza942",
