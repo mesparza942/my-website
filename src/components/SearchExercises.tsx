@@ -21,7 +21,7 @@ const SearchExercises = ({ searchTerm }: SearchResultsProps) => {
       {results?.length ? (
         <>
           <Title label="Exercises" />
-          <div className="grid grid-cols-2 gap-8 mb-8">
+          <div className="flex xl:grid xl:grid-cols-2 gap-8 mb-8">
             {results.map(({ item: exercise }) => (
               <div key={exercise.id}>
                 <h2>

@@ -23,7 +23,7 @@ const SearchProjects = ({ searchTerm }: SearchResultsProps) => {
       {results?.length ? (
         <>
           <Title label="Projects" />
-          <div className="grid grid-cols-2 gap-8 mb-8">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 mb-8">
             {results.map(({ item: project }) => (
               <div key={project.id}>
                 <h2>
@@ -38,7 +38,7 @@ const SearchProjects = ({ searchTerm }: SearchResultsProps) => {
                 </h2>
                 <p className="mb-4">{project.description}</p>
                 <h3>Skills gained:</h3>
-                <div className="flex gap-4">
+                <div className="flex gap-4 flex-wrap">
                   {skills
                     .filter((skill) => project.skills.includes(skill.id))
                     .map((skill) => (

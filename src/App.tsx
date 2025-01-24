@@ -15,7 +15,7 @@ function App() {
           <SideBar />
           <Container className="p-8 justify-center hidden sm:flex">
             <Button
-              btnText="Hire me"
+              btnText="Let's Talk"
               btnType="link"
               href="mailto:maresparzam@gmail.com"
               icon={

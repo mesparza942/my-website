@@ -20,7 +20,7 @@ const SearchCompanies = ({ searchTerm }: SearchResultsProps) => {
       {jobCompanies.length ? (
         <>
           <Title label="Companies" />
-          <div className="grid grid-cols-2 gap-8 py-2">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 py-2">
             {jobCompanies.map(({ item: company }) => (
               <React.Fragment key={company.id}>
                 <div className="flex flex-col">

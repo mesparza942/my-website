@@ -20,7 +20,7 @@ const SearchSkills = ({ searchTerm }: SearchResultsProps) => {
       {results.length ? (
         <>
           <Title label="Skills" />
-          <div className="grid grid-cols-3 gap-3 mb-4">
+          <div className="flex flex-col xl:grid xl:grid-cols-3 gap-3 mb-4">
             {results.map(({ item: skill }) => (
               <React.Fragment key={skill.id}>
                 <div className="flex flex-col">

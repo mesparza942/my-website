@@ -21,7 +21,7 @@ const SearchCourses = ({ searchTerm }: SearchResultsProps) => {
       {results?.length ? (
         <>
           <Title label="Courses" />
-          <div className="grid grid-cols-4 gap-4 mb-4">
+          <div className="flex xl:grid xl:grid-cols-4 gap-4 mb-4">
             {results.map(({ item: course }) => (
               <div key={course.id} className="border-green-300 rounded-xl p-2">
                 <p className="font-bold">

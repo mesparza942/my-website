@@ -94,19 +94,20 @@ const ExperienceSummary = () => {
           </div>
         </div>
       </div>
-      <div className="mt-4">
+      <div className="mt-5">
         <Title label="Companies I have worked for" />
         <div className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 gap-4 py-2">
           {jobCompanies.map((company) => (
             <div key={company.id} className="flex items-center gap-2">
               <img
-                className="w-16 h-16"
+                className="w-20 h-20"
                 src={company.logo}
                 alt={`${company.name} logo`}
               />
               <div className="flex flex-col">
-                <span className="text-lg font-bold">{company.name}</span>
-                <span className="text-sm">
+                <span className="text-xl font-bold">{company.position}</span>
+                <span className="text-base">{company.name}</span>
+                <span className="text-xs">
                   {company.time} ({company.period})
                 </span>
               </div>
