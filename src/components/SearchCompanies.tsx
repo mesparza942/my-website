@@ -1,6 +1,7 @@
 import React from "react";
 
 import Title from "./Title";
+import CompanyChip from "./CompanyChip";
 import { useSearch } from "../utils/useSearch";
 import companiesInfo from "../data/companies.json";
 import type { ICompany, SearchResultsProps } from "../utils/types";
@@ -24,19 +25,12 @@ const SearchCompanies = ({ searchTerm }: SearchResultsProps) => {
             {jobCompanies.map(({ item: company }) => (
               <React.Fragment key={company.id}>
                 <div className="flex flex-col">
-                  <div className="flex items-center gap-2">
-                    <img
-                      className="w-16 h-16"
-                      src={company.logo}
-                      alt={`${company.name} logo`}
-                    />
-                    <div className="flex flex-col">
-                      <span className="text-lg font-bold">{company.name}</span>
-                      <span className="text-sm">
-                        {company.time} ({company.period})
-                      </span>
-                    </div>
-                  </div>
+                  <CompanyChip
+                    companyName={company.name}
+                    companyLogo={company.logo}
+                    companyJobTime={company.time}
+                    companyJobPeriodTime={company.period}
+                  />
                   <div className="pt-2 mx-4">
                     <h2 className="font-bold">Activities / Responsibilities</h2>
                     {company.responsibilities.map((text, idx) => (

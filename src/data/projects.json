@@ -13,7 +13,10 @@
       "github",
       "code",
       "react",
-      "reactjs"
+      "reactjs",
+      "frontend",
+      "front",
+      "fe"
     ]
   },
   {
@@ -29,7 +32,10 @@
       "repositories",
       "github",
       "code",
-      "react"
+      "react",
+      "frontend",
+      "front",
+      "fe"
     ]
   },
   {
@@ -38,7 +44,17 @@
     "description": "A React component that allows you to add N floating items to a container. It is Full customizable like the Container, items, floating effect, etc.",
     "link": "https://github.com/mesparza942/react-floating-icons",
     "skills": [1, 2, 3, 4, 7, 8, 10],
-    "tags": ["projects", "portfolio", "repos", "repositories", "github", "code"]
+    "tags": [
+      "projects",
+      "portfolio",
+      "repos",
+      "repositories",
+      "github",
+      "code",
+      "frontend",
+      "front",
+      "fe"
+    ]
   },
   {
     "id": 4,
@@ -56,7 +72,10 @@
       "react",
       "reactjs",
       "typescript",
-      "ts"
+      "ts",
+      "frontend",
+      "front",
+      "fe"
     ]
   }
 ]

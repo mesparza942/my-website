@@ -15,7 +15,7 @@
       "id": 1,
       "name": "JavaScript",
       "time": "7 years",
-      "tags": ["javascript", "js", "ES6+"],
+      "tags": ["javascript", "js", "ES6+", "frontend", "front", "fe"],
       "reason": "I love JavaScript because it is a versatile language that allows me to build web applications with ease. I have experience with ES6+ features, functional programming, and object-oriented programming."
     },
     {
@@ -29,7 +29,7 @@
       "id": 3,
       "name": "React.js",
       "time": "6 years",
-      "tags": ["react", "reactjs", "next", "nextjs"],
+      "tags": ["react", "reactjs", "next", "nextjs", "frontend", "front", "fe"],
       "reason": "React.js is my favorite library for building user interfaces. I have experience with hooks, context API, Redux, and React Router."
     },
     {
@@ -57,21 +57,39 @@
       "id": 7,
       "name": "HTML5",
       "time": "7 years",
-      "tags": ["html"],
+      "tags": ["html", "frontend", "front", "fe"],
       "reason": "HTML5 is the foundation of web development. I have experience with semantic HTML, accessibility, and SEO best practices."
     },
     {
       "id": 8,
       "name": "CSS3",
       "time": "7 years",
-      "tags": ["css", "styles", "animations", "responsive", "media queries"],
+      "tags": [
+        "css",
+        "styles",
+        "animations",
+        "responsive",
+        "media queries",
+        "frontend",
+        "front",
+        "fe"
+      ],
       "reason": "CSS3 is essential for styling web applications. I have experience with Flexbox, Grid, animations, and responsive design."
     },
     {
       "id": 9,
       "name": "Tailwind CSS",
       "time": "2 years",
-      "tags": ["css", "styles", "animations", "responsive", "media queries"],
+      "tags": [
+        "css",
+        "styles",
+        "animations",
+        "responsive",
+        "media queries",
+        "frontend",
+        "front",
+        "fe"
+      ],
       "reason": "Tailwind CSS is a utility-first CSS framework that I enjoy using for rapid prototyping and building responsive web applications."
     },
     {

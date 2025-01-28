@@ -23,7 +23,10 @@
       "typescript",
       "ts",
       "compositionapi",
-      "composition"
+      "composition",
+      "frontend",
+      "front",
+      "fe"
     ]
   },
   {
@@ -47,7 +50,10 @@
       "nextjs",
       "tailwindcss",
       "tailwind",
-      "coiin"
+      "coiin",
+      "frontend",
+      "front",
+      "fe"
     ]
   },
   {
@@ -64,7 +70,24 @@
     "period": "2021 - 2024",
     "time": "~ 3 years",
     "logo": "/xometry_logo.jpeg",
-    "tags": ["javascript", "react", "reactjs", "typescript", "ts", "js"]
+    "tags": [
+      "javascript",
+      "react",
+      "reactjs",
+      "typescript",
+      "ts",
+      "js",
+      "frontend",
+      "front",
+      "fe",
+      "backend",
+      "back",
+      "be",
+      "splitio",
+      "getstreamio",
+      "nextjs",
+      "unit test"
+    ]
   },
   {
     "id": 4,
@@ -89,7 +112,10 @@
       "typescript",
       "ts",
       "js",
-      "orm"
+      "orm",
+      "frontend",
+      "front",
+      "fe"
     ]
   },
   {
@@ -106,7 +132,16 @@
     "period": "2019 - 2021",
     "time": "3 years",
     "logo": "/dreamcode_logo.jpeg",
-    "tags": ["javascript", "typescript", "ts", "js", "reactjs"]
+    "tags": [
+      "javascript",
+      "typescript",
+      "ts",
+      "js",
+      "reactjs",
+      "frontend",
+      "front",
+      "fe"
+    ]
   },
   {
     "id": 6,
@@ -128,7 +163,10 @@
       "html",
       "seo",
       "elementor",
-      "plugin"
+      "plugin",
+      "frontend",
+      "front",
+      "fe"
     ]
   }
 ]

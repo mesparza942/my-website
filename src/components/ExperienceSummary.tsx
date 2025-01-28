@@ -3,6 +3,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 import Title from "./Title";
+import CompanyChip from "./CompanyChip";
 import generalInfo from "../data/info.json";
 import skills from "../data/skills.json";
 import projects from "../data/projects.json";
@@ -98,20 +99,12 @@ const ExperienceSummary = () => {
         <Title label="Companies I have worked for" />
         <div className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 gap-4 py-2">
           {jobCompanies.map((company) => (
-            <div key={company.id} className="flex items-center gap-2">
-              <img
-                className="w-20 h-20"
-                src={company.logo}
-                alt={`${company.name} logo`}
-              />
-              <div className="flex flex-col">
-                <span className="text-xl font-bold">{company.position}</span>
-                <span className="text-base">{company.name}</span>
-                <span className="text-xs">
-                  {company.time} ({company.period})
-                </span>
-              </div>
-            </div>
+            <CompanyChip
+              companyName={company.name}
+              companyLogo={company.logo}
+              companyJobTime={company.time}
+              companyJobPeriodTime={company.period}
+            />
           ))}
         </div>
       </div>

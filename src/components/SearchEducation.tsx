@@ -8,7 +8,7 @@ const SearchEducation = ({ searchTerm }: SearchResultsProps) => {
     searchTerm,
     data: [educationInfo],
     dataType: "Education",
-    searchKeys: ["tags"],
+    searchKeys: ["tags", "university", "degree"],
   });
 
   return (

@@ -5,7 +5,7 @@ import { trackSearchEvent } from "./eventTracking";
 interface UseSearchProps<DataType> {
   data: DataType[];
   dataType: string;
-  searchKeys: string[];
+  searchKeys: (keyof DataType)[];
   searchTerm: string;
 }
 export function useSearch<DataType>({
@@ -16,7 +16,7 @@ export function useSearch<DataType>({
 }: UseSearchProps<DataType>) {
   const response = useMemo(() => {
     const fuse = new Fuse(data, {
-      keys: searchKeys,
+      keys: searchKeys as string[],
       includeScore: true,
       includeMatches: true,
       threshold: 0.4, // Allow fuzzy matching for typos

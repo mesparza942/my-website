@@ -4,7 +4,17 @@
     "name": "React sortable tree component",
     "description": "Spike to evaluate the feasibility of using a React sortable tree component and also evaluate how flexible the component is in terms of customization.",
     "link": "https://codesandbox.io/p/sandbox/react-sortable-tree-demo-lwbsx?file=%2Fsrc%2FApp.js",
-    "tags": ["react", "tree", "data structure", "css", "styles", "class"]
+    "tags": [
+      "react",
+      "tree",
+      "data structure",
+      "css",
+      "styles",
+      "class",
+      "frontend",
+      "front",
+      "fe"
+    ]
   },
   {
     "id": 2,
@@ -18,6 +28,6 @@
     "name": "CSS Fancy Border",
     "description": "Quick CSS fancy border with gradient.",
     "link": "https://codesandbox.io/p/sandbox/test-border-myxpps?file=%2Fstyles.css%3A9%2C17-9%2C55",
-    "tags": ["css", "html", "styles", "stylesheets"]
+    "tags": ["css", "html", "styles", "stylesheets", "frontend", "front", "fe"]
   }
 ]
