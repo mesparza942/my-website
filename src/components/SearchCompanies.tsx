@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 import Title from "./Title";
@@ -26,15 +27,16 @@ const SearchCompanies = ({ searchTerm }: SearchResultsProps) => {
               <React.Fragment key={company.id}>
                 <div className="flex flex-col">
                   <CompanyChip
+                    jobPosition={company.position}
                     companyName={company.name}
                     companyLogo={company.logo}
                     companyJobTime={company.time}
                     companyJobPeriodTime={company.period}
                   />
-                  <div className="pt-2 mx-4">
+                  <div className="pt-2">
                     <h2 className="font-bold">Activities / Responsibilities</h2>
                     {company.responsibilities.map((text, idx) => (
-                      <p key={idx} className="text-base">
+                      <p key={idx} className="text-base mx-3">
                         - {text}
                       </p>
                     ))}

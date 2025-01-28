@@ -1,3 +1,5 @@
+"use client";
+
 import { useMemo } from "react";
 import Fuse from "fuse.js";
 import { trackSearchEvent } from "./eventTracking";

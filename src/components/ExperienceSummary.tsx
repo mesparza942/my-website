@@ -100,6 +100,8 @@ const ExperienceSummary = () => {
         <div className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 gap-4 py-2">
           {jobCompanies.map((company) => (
             <CompanyChip
+              key={company.id}
+              jobPosition={company.position}
               companyName={company.name}
               companyLogo={company.logo}
               companyJobTime={company.time}

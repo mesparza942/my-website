@@ -1,10 +1,12 @@
 interface CompanyChipProps {
+  jobPosition: string;
   companyName: string;
   companyLogo: string;
   companyJobTime: string;
   companyJobPeriodTime: string;
 }
 const CompanyChip = ({
+  jobPosition,
   companyName,
   companyLogo,
   companyJobTime,
@@ -18,8 +20,9 @@ const CompanyChip = ({
         alt={`${companyName} logo`}
       />
       <div className="flex flex-col">
-        <span className="text-lg font-bold">{companyName}</span>
-        <span className="text-sm">
+        <span className="text-xl font-bold">{jobPosition}</span>
+        <span className="text-base">{companyName}</span>
+        <span className="text-xs">
           {companyJobTime} ({companyJobPeriodTime})
         </span>
       </div>

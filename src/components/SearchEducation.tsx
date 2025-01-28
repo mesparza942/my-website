@@ -1,3 +1,4 @@
+"use client";
 import Title from "./Title";
 import { useSearch } from "../utils/useSearch";
 import educationInfo from "../data/education.json";
