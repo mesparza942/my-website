@@ -10,8 +10,10 @@ export default defineConfig({
     outDir: "dist",
   },
   test: {
+    globals: true,
+    environment: "jsdom",
     include: ["src/**/*.{spec,test}.tsx"],
     browser: { enabled: true },
-    setupFiles: "src/setupTests.ts",
+    setupFiles: "./src/setupTests.ts",
   },
 });
