@@ -1,6 +1,6 @@
 const WelcomeAnimated = () => {
   return (
-    <div className="absolute flex flex-wrap text-lg md:text-xl xl:text-3xl font-bold text-black dark:text-white md:left-[200px] px-8 top-2 md:top-6 xl:left-[400px]">
+    <div className="absolute flex flex-nowrap sm:flex-nowrap text-md md:text-3xl font-bold text-black dark:text-white md:left-[80px] lg:left-[200px] pl-8 top-3 md:top-6 xl:left-[400px]">
       <span className="text-green-700 dark:text-greenFav tracking-widest">
         {"<"}
       </span>
