@@ -1,14 +1,14 @@
 {
   "name": "Marcelo Esparza",
   "job": "Software Engineer",
-  "jobCompany": "TMRW Life Sciences",
+  "jobCompany": "Curotec",
   "photo": "./mesparza.jpg",
   "location": "Quito - Ecuador",
   "email": "maresparzam@gmail.com",
   "github": "https://github.com/mesparza942",
   "githubAccount": "mesparza942",
   "linkedin": "https://www.linkedin.com/in/marcelo-esparza-20506a156/",
-  "aboutMe": "I am a results-driven Senior Software Engineer with 7 years of experience building scalable web applications and delivering software solutions. My expertise lies in JavaScript and its ecosystem, with a strong focus on React.js for creating responsive and maintainable web applications. I am also experienced with Vue.js and backend technologies like Node.js and TypeScript. I thrive in agile environments, collaborating closely with cross-functional teams, and continuously adopting emerging technologies. With a full-stack perspective, I ensure seamless and impactful digital experiences from concept to deployment.",
+  "aboutMe": "Full-stack JavaScript Engineer with a passion for frontend development and creating great user experiences. Passionate about clean architecture, solving complex problems, learning new technologies, and working with teams to turn ideas into scalable, reliable, impactful software. My toolkit includes TypeScript, React, Vue, Node.js, GraphQL, and modern UI/UX practices, but I’m always exploring better ways to build software.",
   "tags": [
     "JavaScript",
     "React.js",

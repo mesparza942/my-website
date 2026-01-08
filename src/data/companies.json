@@ -1,6 +1,40 @@
 [
   {
-    "id": 1,
+    "id": 7,
+    "name": "Curotec",
+    "position": "Senior Software Engineer",
+    "responsibilities": [
+      "React/Vue Frontend Development",
+      "Node.js and Laravel Backend Development (Microservices)",
+      "Migrated components from Class Components to Functional Components with Hooks.",
+      "Implemented unit and integration tests with Jest and React Testing Library.",
+      "Migrated components from OptionsAPI to CompositionAPI and TypeScript."
+    ],
+    "period": "2025",
+    "time": "1 year",
+    "logo": "/curotec_logo.jpeg",
+    "tags": [
+      "react",
+      "reactjs",
+      "hooks",
+      "javascript",
+      "typescript",
+      "ts",
+      "reacthooks",
+      "vue",
+      "vuejs",
+      "vue.js",
+      "pinia",
+      "vuex",
+      "compositionapi",
+      "composition",
+      "frontend",
+      "front",
+      "fe"
+    ]
+  },
+  {
+    "id": 6,
     "name": "TMRW Life Sciences",
     "position": "Vue Developer",
     "responsibilities": [
@@ -30,7 +64,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 5,
     "name": "Raiinmaker",
     "position": "Next.js Developer",
     "responsibilities": [
@@ -57,7 +91,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Xometry",
     "position": "FullStack JS Developer",
     "responsibilities": [
@@ -90,7 +124,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "TrueLogic Software",
     "position": "Software Engineer",
     "responsibilities": [
@@ -119,7 +153,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 2,
     "name": "DreamCode",
     "position": "React Developer",
     "responsibilities": [
@@ -144,7 +178,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 1,
     "name": "Elementor",
     "position": "Technical Support Engineer",
     "responsibilities": [
