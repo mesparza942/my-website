@@ -6,7 +6,7 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import Container from "./Container";
 import Title from "./Title";
 import Button from "./Button";
-import MyCV from "../assets/CV-MarceloEsparza-2025.pdf";
+const MY_CV_PATH = "/CV-MarceloEsparza-2025.pdf";
 
 interface SearchBarProps {
   value: string;
@@ -26,7 +26,7 @@ const SearchBar = ({ value, onChange }: SearchBarProps) => {
         <Button
           className="self-start m-0 hidden md:block"
           btnType="link"
-          href={MyCV}
+          href={MY_CV_PATH}
           download="marcelo-esparza-cv"
         >
           Download CV
@@ -43,7 +43,7 @@ const SearchBar = ({ value, onChange }: SearchBarProps) => {
       <Button
         className="flex w-fit self-center mt-4 md:hidden"
         btnType="link"
-        href={MyCV}
+        href={MY_CV_PATH}
         download="marcelo-esparza-cv"
       >
         Download CV
